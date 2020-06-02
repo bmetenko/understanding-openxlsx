@@ -177,3 +177,8 @@ addStyle(wb, 2, style = s1, rows=c(2,9), cols=c(2,2))
 
 saveWorkbook(wb, "custom.with.plot.xlsx", overwrite = TRUE) ## save to working directory
 # Looks very good. No grid theming is interesting especially considering the way you can style the rest of the excel file. Green borders worked this time.
+
+# BELOW: ADD sizing checks on object sizes, and final excel size differences.
+# Examples from vignette.
+# Plot input and compression.
+# Image outputs.
