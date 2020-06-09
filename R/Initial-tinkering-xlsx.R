@@ -6,9 +6,16 @@ ls("package:xlsx")
 
 # [ADD INTO SHEET Functionality]
 # - # - # - # - # - # - # - # - # - # - # 
-# [1] "addAutoFilter"          "addDataFrame"          
-# [3] "addHyperlink"           "addMergedRegion"       
-# [5] "addPicture"             
+# "addAutoFilter"
+# xlsx::addAutoFilter -> function (sheet, cellRange) 
+# """rJava::J class method call to util function CellRangeAddress.
+# Adds to sheet through method of R class sheet == sheet$setAutoFilter(cellRangeAddress)"""
+ 
+
+# "addDataFrame"          
+# "addHyperlink"
+# "addMergedRegion"       
+# "addPicture"             
 
 # // "Alignment"             
 # [7] "autoSizeColumn"        
