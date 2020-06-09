@@ -5,7 +5,8 @@ These two package implementations are both able to read Microsoft Excel based fi
 
 Later plans on using the learnr package for question and test logic.
 
-| **FUNCTION NAME SIMILARITIES**                                       |                                               |
-|-xlsx-----------------------------------------------------------------|-openxlsx--------------------------------------|
-| ADD Functions                                                        |                                               |
-| addAutoFilter, addDataFrame,addHyperlink,addMergedRegion, addPicture | addCreator, addFilter, addStyle, addWorksheet |
+**FUNCTION NAME SIMILARITIES**|  -
+|--------|----------|                                        
+| __xlsx__ | __openxlsx___ |
+| ADD  | Functions |
+| `addAutoFilter`, `addDataFrame`, `addHyperlink`, `addMergedRegion`, `addPicture` | `addCreator`, `addFilter`, `addStyle`, `addWorksheet` |
