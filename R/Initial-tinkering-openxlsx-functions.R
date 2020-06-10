@@ -68,7 +68,8 @@ ls("package:openxlsx")
 
 # [[PROTECT FUNCTIONS]]
 # - # - # - # - # - # - # - # - # - # - # 
-#"protectWorkbook" "protectWorksheet"      
+# "protectWorkbook"
+# "protectWorksheet"      
 
 # [[READ Functions]]
 # - # - # - # - # - # - # - # - # - # - # 

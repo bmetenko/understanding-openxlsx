@@ -7,6 +7,13 @@ Later plans on using the learnr package for question and test logic.
 
 **FUNCTION NAME SIMILARITIES**|  -
 |--------|----------|                                        
-| __xlsx__ | __openxlsx___ |
-| ADD  | Functions |
+| __xlsx__ | __openxlsx__ |
+| ADD Functions| |
 | `addAutoFilter`, `addDataFrame`, `addHyperlink`, `addMergedRegion`, `addPicture` | `addCreator`, `addFilter`, `addStyle`, `addWorksheet` |
+| CREATE Functions| |
+|`createCell`, `createCellComment`, `createFreezePane`, `createRange`, `createRow`, `createSheet`, `createSplitPane`, `createWorkbook`| `createComment`, `createNamedRegion`, `createStyle`, `createWorkbook`  |
+|GET Functions| |
+| `getCellComment`, `getCells`, `getCellStyle`, `getCellValue`, `getRanges`, `getRows`, `getSheets`, `get_java_tmp_dir`|`getBaseFont`, `getCellRefs`, `getCreators`, `getDateOrigin`, `getNamedRegions`, `getSheetNames`, `getStyles`, `getTables` |
+|REMOVE Functions| |
+|`removeCellComment`, `removeMergedRegion`, `removeRow`, `removeSheet`|`removeCellMerge`, `removeColWidths`, `removeComment`, `removeFilter`, `removeRowHeights`, `removeTable`, `removeWorksheet`|
+|||
