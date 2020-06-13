@@ -22,7 +22,7 @@ ls("package:xlsx")
 
 # [BORDER STYLING AND CELL BLOCK (CB) STYLING]
 # - # - # - # - # - # - # - # - # - # - # 
-# "Border"                
+# // "Border"                
 # "BORDER_STYLES_"        
 # "CB.setBorder"          
 # "CB.setColData"          
@@ -70,7 +70,7 @@ ls("package:xlsx")
 # "HALIGN_STYLES_"        
 # "INDEXED_COLORS_"        
 
-# [IS.CLASSNAME] [Wrappers around inherits(x, classname)]
+# [IS.CLASSNAME] // [Wrappers around inherits(x, classname)] //
 # - # - # - # - # - # - # - # - # - # - # 
 # "is.Alignment"          
 # "is.Border"              
@@ -115,3 +115,27 @@ ls("package:xlsx")
 # - # - # - # - # - # - # - # - # - # - # 
 # "write.xlsx"            
 # "write.xlsx2"      
+
+
+## END Command Library ##
+
+# rJava parsing xml schemas.
+
+# List of Classes that don't need a workbook to function. Create named attribute lists.
+# Alignment
+# Border
+# CellProtection
+# DataFormat
+# Fill
+
+# These style arguments can be chained internally, with the '+' operator, after a call to the workbook on functions capable of accepting them.
+
+# Functions that require a wb:
+# to be added...
+
+# Functions that require a sheet:
+# to be added...
+
+
+vignette("xlsx", package = "xlsx")
+vignette("excel_report", package = "xlsx")

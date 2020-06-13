@@ -5,7 +5,8 @@ These two package implementations are both able to read Microsoft Excel based fi
 
 Later plans on using the learnr package for question and test logic.
 
-**FUNCTION NAME SIMILARITIES**|  -
+
+|<i>**FUNCTION NAME SIMILARITIES** </i>|  |
 |--------|----------|                                        
 | __xlsx__ | __openxlsx__ |
 | ADD Functions| |
@@ -16,4 +17,6 @@ Later plans on using the learnr package for question and test logic.
 | `getCellComment`, `getCells`, `getCellStyle`, `getCellValue`, `getRanges`, `getRows`, `getSheets`, `get_java_tmp_dir`|`getBaseFont`, `getCellRefs`, `getCreators`, `getDateOrigin`, `getNamedRegions`, `getSheetNames`, `getStyles`, `getTables` |
 |REMOVE Functions| |
 |`removeCellComment`, `removeMergedRegion`, `removeRow`, `removeSheet`|`removeCellMerge`, `removeColWidths`, `removeComment`, `removeFilter`, `removeRowHeights`, `removeTable`, `removeWorksheet`|
+|WRITE Functions| |
+|`write.xlsx`, `write.xlsx2`|`write.xlsx`, `writeComment`, `writeData`, `writeDataTable`, `writeFormula`|
 |||
