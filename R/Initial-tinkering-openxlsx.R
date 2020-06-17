@@ -182,3 +182,23 @@ saveWorkbook(wb, "custom.with.plot.xlsx", overwrite = TRUE) ## save to working d
 # Examples from vignette.
 # Plot input and compression.
 # Image outputs.
+
+
+# Empty workbook overhead.
+
+wb <- openxlsx::createWorkbook()
+object.size(wb) # 688 bytes
+
+wb2 <- xlsx::createWorkbook()
+object.size(wb2) # 944 bytes
+
+
+str(wb)
+str(wb2)
+
+# Profiling
+profvis::profvis({
+  wb <- openxlsx::createWorkbook()
+  
+  wb2 <- xlsx::createWorkbook()
+})
