@@ -8,12 +8,14 @@ Empty CreateWorkbook R object overhead (memory size):
 |-|-|
 944 bytes| 688 bytes
 
-Profvis empty workbook creation timing:
+Profvis empty workbook creation timing (inconsistant):
 |xlsx|openxlsx|
 |-|-|
-10ms|30ms
-| mem. used| mem. used|
+10-15 ms| 25-30 ms
+| RAM used| RAM used|
 |0.1 MB|0.3 MB|
+
+Note: Microbenchmark results for 10,000 runs of empty workbook creation show that the xlsx based approach runs, on average 3-4 times faster than the openxlsx based creation. (565 vs 2060 microseconds)
 
 Later plans on using the learnr package for question and test logic.
 

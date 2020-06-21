@@ -196,9 +196,24 @@ object.size(wb2) # 944 bytes
 str(wb)
 str(wb2)
 
-# Profiling
+# Profiling Stress Testing
 profvis::profvis({
-  wb <- openxlsx::createWorkbook()
-  
-  wb2 <- xlsx::createWorkbook()
+  for (i in 1:25) {
+    openxlsx::createWorkbook()
+    
+    # Sys.sleep(0.1)
+    
+    xlsx::createWorkbook()
+  }
+
 })
+
+bench <- microbenchmark::microbenchmark(
+  "openxlsx" = {
+    openxlsx::createWorkbook()
+  }, "xlsx" ={
+    xlsx::createWorkbook()
+  }, times = 10000
+)
+
+ggplot2::autoplot(bench)
